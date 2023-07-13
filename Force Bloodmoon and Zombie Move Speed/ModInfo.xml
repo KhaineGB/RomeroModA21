@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<Name value="ForceBloodmoonOptions" />
+	<DisplayName value="Khaine's Force Bloodmoon Options Mod" />
+	<Description value="Sets bloodmoons to off and zombies to always walk for Romero Mod." />
+	<Author value="KhaineGB" />
+	<Version value="1.1.0.0" />
+	<Website value="" />
+</xml>

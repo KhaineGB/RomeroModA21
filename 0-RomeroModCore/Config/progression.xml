@@ -1,0 +1,113 @@
+<configs>
+	<!-- Increasing XP required to level due to lots more zombies -->
+	<set xpath="/progression/level[@exp_to_level='10000']/@exp_to_level">13000</set>
+	
+	<!-- Moving around the stupid new crafting system for scrap unlocks -->
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']">
+		<display_entry icon="meleeToolRepairT0StoneAxe" name_key="harvestToolsStone" has_quality="true" unlock_level="1,3,5,7,10" >
+			<unlock_entry item="meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel" unlock_tier="1" />
+		</display_entry>
+		<display_entry icon="meleeToolPickT1IronPickaxe" name_key="harvestToolsScrap" has_quality="true" unlock_level="11,14,18,22,26" >
+			<unlock_entry item="meleeToolScrapPickaxe,meleeToolScrapShovel,meleeToolScrapFireaxe" unlock_tier="1" />
+		</display_entry>
+		<display_entry icon="meleeToolPickT1IronPickaxe" name_key="harvestToolsIron" has_quality="true" unlock_level="21,24,28,32,36" >
+			<unlock_entry item="meleeToolPickT1IronPickaxe,meleeToolShovelT1IronShovel,meleeToolAxeT1IronFireaxe" unlock_tier="1" />
+		</display_entry>
+		<display_entry icon="meleeToolPickT2SteelPickaxe" name_key="harvestToolsSteel" has_quality="true" unlock_level="37,45,53,61,79" >
+			<unlock_entry item="meleeToolPickT2SteelPickaxe,meleeToolShovelT2SteelShovel,meleeToolAxeT2SteelAxe" unlock_tier="1" />
+		</display_entry>
+		<display_entry icon="meleeToolPickT3Auger" name_key="harvestToolsMechanical" has_quality="true" unlock_level="60,70,80,90,100" >
+			<unlock_entry item="meleeToolPickT3Auger,meleeToolAxeT3Chainsaw" unlock_tier="1" />
+		</display_entry>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="meleeToolScrapPickaxe,meleeToolScrapShovel,meleeToolScrapFireaxe"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="21,100" value="1" tags="meleeToolPickT1IronPickaxe,meleeToolShovelT1IronShovel,meleeToolAxeT1IronFireaxe"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="37,100" value="1" tags="meleeToolPickT2SteelPickaxe,meleeToolShovelT2SteelShovel,meleeToolAxeT2SteelAxe"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="meleeToolPickT3Auger,meleeToolAxeT3Chainsaw"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,100" value="1,2,3,4,4" tags="meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="14,18,22,26,100" value="1,2,3,4,4" tags="meleeToolScrapPickaxe,meleeToolScrapShovel,meleeToolScrapFireaxe"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="24,28,32,36,100" value="1,2,3,4,4" tags="meleeToolPickT1IronPickaxe,meleeToolShovelT1IronShovel,meleeToolAxeT1IronFireaxe"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="45,53,61,69,100" value="1,2,3,4,4" tags="meleeToolPickT2SteelPickaxe,meleeToolShovelT2SteelShovel,meleeToolAxeT2SteelAxe"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="70,80,90,100" value="1,2,3,4" tags="meleeToolPickT3Auger,meleeToolAxeT3Chainsaw"/>
+		</effect_group>
+	</set>
+	
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingKnuckles']">
+		<display_entry item="meleeWpnKnucklesT0LeatherKnuckles" unlock_level="1,3,5,7,10" />
+		<display_entry item="meleeWpnKnucklesScrap" unlock_level="11,17,24,31,38" />
+		<display_entry item="meleeWpnKnucklesT1IronKnuckles" unlock_level="21,27,34,41,48" />
+		<display_entry item="meleeWpnKnucklesT3SteelKnuckles" unlock_level="39,48,57,66,75" />
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,75" value="1" tags="meleeWpnKnucklesT0LeatherKnuckles"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,75" value="1" tags="meleeWpnKnucklesScrap"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="21,75" value="1" tags="meleeWpnKnucklesT1IronKnuckles"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,75" value="1" tags="meleeWpnKnucklesT3SteelKnuckles"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,75" value="1,2,3,4,4" tags="meleeWpnKnucklesT0LeatherKnuckles"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="17,24,31,38,75" value="1,2,3,4,4" tags="meleeWpnKnucklesScrap"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="27,34,41,48,75" value="1,2,3,4,4" tags="meleeWpnKnucklesT1IronKnuckles"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="48,57,66,75" value="1,2,3,4" tags="meleeWpnKnucklesT3SteelKnuckles"/>
+		</effect_group>
+	</set>
+	
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']">
+		<display_entry item="meleeWpnBladeT0BoneKnife" unlock_level="1,3,5,7,10" />
+		<display_entry item="meleeWpnBladeScrapMachete" unlock_level="11,17,24,31,38" />
+		<display_entry item="meleeWpnBladeT1HuntingKnife" unlock_level="21,27,34,41,48" />
+		<display_entry item="meleeWpnBladeT3Machete" unlock_level="39,48,57,66,75" />
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,75" value="1" tags="meleeWpnBladeT0BoneKnife"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,75" value="1" tags="meleeWpnBladeScrapMachete"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="21,75" value="1" tags="meleeWpnBladeT1HuntingKnife"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,75" value="1" tags="meleeWpnBladeT3Machete"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,75" value="1,2,3,4,4" tags="meleeWpnBladeT0BoneKnife"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="17,24,31,38,75" value="1,2,3,4,4" tags="meleeWpnBladeScrapMachete"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="27,34,41,48,75" value="1,2,3,4,4" tags="meleeWpnBladeT1HuntingKnife"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="48,57,66,75" value="1,2,3,4" tags="meleeWpnBladeT3Machete"/>
+		</effect_group>
+	</set>
+	
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingClubs']">
+		<display_entry item="meleeWpnClubT0WoodenClub" unlock_level="1,3,5,7,10" />
+		<display_entry item="meleeWpnClubScrap" unlock_level="11,17,24,31,38" />
+		<display_entry item="meleeWpnClubT1BaseballBat" unlock_level="21,27,34,41,48" />
+		<display_entry item="meleeWpnClubT3SteelClub" unlock_level="39,48,57,66,75" />
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,75" value="1" tags="meleeWpnClubT0WoodenClub"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,75" value="1" tags="meleeWpnClubScrap"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="21,75" value="1" tags="meleeWpnClubT1BaseballBat"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,75" value="1" tags="meleeWpnClubT3SteelClub"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,75" value="1,2,3,4,4" tags="meleeWpnClubT0WoodenClub"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="17,24,31,38,75" value="1,2,3,4,4" tags="meleeWpnClubScrap"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="27,34,41,48,75" value="1,2,3,4,4" tags="meleeWpnClubT1BaseballBat"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="48,57,66,75" value="1,2,3,4" tags="meleeWpnClubT3SteelClub"/>
+		</effect_group>
+	</set>
+	
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingSpears']">
+		<display_entry item="meleeWpnSpearT0StoneSpear" unlock_level="1,3,5,7,10" />
+		<display_entry item="meleeWpnSpearScrap" unlock_level="11,17,24,31,38" />
+		<display_entry item="meleeWpnSpearT1IronSpear" unlock_level="21,27,34,41,48" />
+		<display_entry item="meleeWpnSpearT3SteelSpear" unlock_level="39,48,57,66,75" />
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,75" value="1" tags="meleeWpnSpearT0StoneSpear"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,75" value="1" tags="meleeWpnSpearScrap"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="21,75" value="1" tags="meleeWpnSpearT1IronSpear"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,75" value="1" tags="meleeWpnSpearT3SteelSpear"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,75" value="1,2,3,4,4" tags="meleeWpnSpearT0StoneSpear"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="17,24,31,38,75" value="1,2,3,4,4" tags="meleeWpnSpearScrap"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="27,34,41,48,75" value="1,2,3,4,4" tags="meleeWpnSpearT1IronSpear"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="48,57,66,75" value="1,2,3,4" tags="meleeWpnSpearT3SteelSpear"/>
+		</effect_group>
+	</set>
+</configs>

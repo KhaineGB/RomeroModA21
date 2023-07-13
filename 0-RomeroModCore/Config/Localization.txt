@@ -1,0 +1,65 @@
+Key,english
+goWanderingHordeCount,Wandering Horde Frequency
+goWanderingHordeCountDesc,Sets how often wandering hordes happen.
+goWanderingHordeMultiplier,Wandering Horde Zombies
+goWanderingHordeMultiplierDesc,Sets how many zombies are present in the wandering horde.
+mmGoMaxZombies,Max Zombies Alive
+goMaxZombies,Max Zombies Alive
+goMaxZombiesDesc,Maximum amount of zombies that can spawn in the world.
+goZombies,{0} Zombies
+mmGoMaxAnimals,Max Animals Alive
+goMaxAnimals,Max Animals Alive
+goMaxAnimalsDesc,Maximum amount of animals that can spawn in the world.
+goAnimals,{0} Animals
+mmGoLandClaimCount,Land Claim Amount
+goLandClaimCount,Claim Amount
+goLandClaimCountDesc,The amount of land claim blocks a player can have active.
+goLandClaimCountValue,{0} block
+goLandClaimCountValues,{0} blocks
+sc_Melee,Supply Crate
+sc_Ranged,Supply Crate
+sc_Food,Supply Crate
+sc_Construction,Supply Crate
+sc_Medical,Supply Crate
+sc_Ammo,Supply Crate
+meleeToolScrapPickaxe,Scrap Iron Pickaxe
+pickaxeScrapDesc,The scrap iron pickaxe is great for breaking stone and harvesting minerals.
+meleeToolScrapFireaxe,Scrap Iron Fireaxe
+fireaxeScrapDesc,The fireaxe is good for harvesting wood and has a better chance to dismember than most weapons.
+meleeToolScrapShovel,Scrap Iron Shovel
+shovelScrapDesc,"The scrap iron shovel is great for digging through earth, sand or snow."
+meleeWpnBladeScrapMachete,Scrap Machete
+scrapMacheteDesc,Great for chopping zombie limbs off and gutting animals for meat.
+meleeWpnSpearScrap,Scrap Iron Spear
+meleeWpnSpearScrapDesc,A spear made out of random bits of metal found in the wasteland. Slightly more durable and slightly more damage than it's stone counterpart
+meleeWpnKnucklesScrap,Scrap Iron Knuckles
+meleeWpnKnucklesScrapDesc,"Knucles made out of scrap bits of metal, duct tape and hope. Does slightly more damage than the leather version."
+meleeWpnClubScrap,Scrap Iron Club
+meleeWpnClubScrapDesc,A lump of metal with bits of iron hammered into it. Makes it slightly more durable.
+resourceArrowHeadScrapIron,Scrap Iron Arrowhead
+resourceArrowHeadScrapIronDesc,Arrowhead made from random bits of iron found in the wasteland. Used to make Scrap Iron Arrows.
+ammoArrowScrapIron,Scrap Iron Arrow
+ammoArrowScrapIronDesc,Does slightly more damage than stone arrows. Would cause tetanus if zombies were actually alive.
+meleeWpnKnucklesScrapSchematic,Scrap Iron Knuckles Schematic
+meleeWpnClubScrapSchematic,Scrap Iron Club Schematic
+meleeWpnBladeScrapMacheteSchematic,Scrap Iron Machete Schematic
+meleeWpnSpearScrapSchematic,Scrap Iron Spear Schematic
+meleeToolScrapIronSetSchematic,Scrap Iron Tools Schematic
+perkMiner69rRank1LongNewDesc,"Everyone has to start somewhere. Craft quality 2 poor tools, increase tool damage by 10% and block damage by 30% with any axe, pick, chainsaw or auger.\nUnlocks all scrap iron tools like pickaxes"
+perkMiner69rRank3LongNewDesc,"You are now a professional miner or what they called muckmen back in the day. Craft quality 4 good tools, increase tool damage by 30% and block damage by 90% with any axe, pick, chainsaw or auger.\nUnlocks all iron tools like pickaxes"
+perkPummelPeteRank1LongNewDesc,"You might not pack a punch but as a roughneck you can swing a club! Craft quality 2 poor clubs, deal 10% more damage and attacks do 40% more damage to stunned enemies. Power attacks have a 60% chance to knock foes back down.\nUnlocks scrap club crafting."
+perkPummelPeteRank3LongNewDesc,"You hit hard enough to be in the big leagues now. Craft quality 4 good clubs, deal 30% more damage, attacks do 120% more damage to stunned enemies and power attacks have a 80% chance to knock foes back down.\nLanding 5 successive hits in a short time causes the last blow to do 100% extra damage.\nUnlocks baseball bat crafting."
+perkJavelinMasterRank1LongNewDesc,Sticks and stones can't break my bones but if combined make a nice spear. Craft quality 2 poor spears. Spears do 10% more damage and have 10% more range when thrown.\nUnlocks scrap iron spear crafting.
+perkJavelinMasterRank3LongNewDesc,You are now a Spearman and can Craft quality 4 good spears. Spears inflict 30% more damage and have 30% more range when thrown.\nUnlocks iron spear crafting.
+perkBrawlerRank1LongNewDesc,Tired of being bullied by the undead? Zombies can't bite if you knock their damn teeth out! Craft quality 2 poor knuckled weapons and deal 10% more damage with fists. Punches to the head negate infection ability.\nUnlocks scrap iron knuckles crafting.
+perkBrawlerRank3LongNewDesc,All the fighting and scrapping has added up and you are a real slugger now. Craft quality 4 good knuckle weapons and deal 30% more damage with fists. Power attacks to the head have a 20% chance to knock down your opponent.\nUnlocks iron knuckles crafting.
+perkDeepCutsRank1LongNewDesc,You might have a dull blade but you know how to use it. Craft quality 2 poor knives and deal 10% more damage. You can inflict up to 3 Bleeding Wounds on an enemy and a power attack inflicts 2. Every attack refreshes the duration on bleeding. Enemies run 10% slower while bleeding.\nUnlocks scrap machete crafting.
+perkDeepCutsRank3LongNewDesc,You are a cut above the rest. Craft quality 4 good knives and deal 30% more damage. You can inflict up to 5 Bleeding Wounds on an enemy and a power attack inflicts 4. Glancing blows have a 40% chance to cause 1 Bleeding Wound. Enemies run 15% slower while bleeding.\nUnlocks hunting knife crafting.
+rScrapIronLogSpike5,R Iron Log Spike 5
+rWoodLogSpike2,Reinforced Wood Log Spike 2
+rWoodMetalLogSpike3,Reinforced Wood Metal Log Spike 3
+scrapIronLogSpike4,Iron Log Spike
+steelLogSpike6,Steel Log Spike 6
+woodLogSpike1,Wood Log Spike
+woodLogSpike1Desc,"Log spike traps can damage, cripple, even kill enemies and last longer than spike traps. Place them using the secondary action. (Upgradable)"
+harvestToolsScrap,Scrap Iron Tools
