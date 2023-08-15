@@ -584,7 +584,7 @@ public static class EntityUtilities
         return true;
     }
 
-    public static void Stop(int entityID)
+    public static void Stop(int entityID, bool full = false)
     {
         var myEntity = GameManager.Instance.World.GetEntity(entityID) as EntityAlive;
         if (myEntity == null)
@@ -594,6 +594,8 @@ public static class EntityUtilities
         myEntity.moveHelper?.Stop();
         myEntity.speedForward = 0;
         myEntity.speedStrafe = 0;
+        
+        if ( !full ) return;
         
         // This seems to prevent the shuffling of feet.
         myEntity.emodel.avatarController.UpdateFloat(AvatarController.forwardHash, 0, false);
@@ -1034,7 +1036,7 @@ public static class EntityUtilities
         if ( defaultFollow)
             SetCurrentOrder(EntityID, Orders.Follow);
 
-        leaderEntity.AddOwnedEntity(myEntity);
+      //  leaderEntity.AddOwnedEntity(myEntity);
     }
 
     public static void SetOwner(int EntityID, int LeaderID)
